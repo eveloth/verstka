@@ -5,6 +5,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Bakery</title>
+  <link href="./normalize.css" rel="stylesheet">
   <link href="./style.css" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,126 +22,147 @@
 </head>
 
 <body>
-  <section class="hero">
+  <header class="hero">
     <div class="container hero__container">
 
-      <header class="hero__header">
-        <div class="logo">
-          <img src="./images/logo.svg" alt="">
+      <nav class="hero__nav">
+        <div class="hero__logo">
+          <a href="#">
+            <img src="./images/logo.svg" alt="">
+          </a>
         </div>
-        <nav class="navigation">
-          <a class="navigation__link poppins-22-600" href="#">Home</a>
-          <a class="navigation__link poppins-22-600" href="#">Blog</a>
-          <a class="navigation__link poppins-22-600" href="#">Contact Us</a>
-          <a class="navigation__link poppins-22-600" href="#">Services</a>
-        </nav>
-      </header>
+        <ul class="hero__nav-links font--secondary font-weight--semi-bold">
+          <li>
+            <a class="hero__nav-link hero__nav-link--active" #">Home</a>
+          </li>
+          <li>
+            <a class="hero__nav-link" href="#">Blog</a>
+          </li>
+          <li>
+            <a class="hero__nav-link" href="#">Contact Us</a>
+          </li>
+          <li>
+            <a class="hero__nav-link" href="#">Services</a>
+          </li>
+        </ul>
+      </nav>
 
-      <div class="hero__headline">
-        <p class="inter-24-600 pale-yellow">Delicious Cafe</p>
-        <h1 class="sansita-74-400 off-white">Sweet Treats,</br>Perfect Eats</h1>
+      <div class="hero__content">
+        <p class="hero__subtitle font-weight--semi-bold accent">Delicious Cafe</p>
+        <h1 class="hero__title font--accent font-weight--normal light">Sweet Treats,<br>Perfect Eats</h1>
       </div>
 
       <div class="hero__links">
-        <a href="#" class="link-button link-button--big link-button--red inter-24-600">Shop Now</a>
-        <a href="#" class="link-button link-button--big pale-yellow inter-24-600">Learn More</a>
+        <a href="#" class="hero__shop-btn button button--l font-weight--semi-bold">Shop Now</a>
+        <a href="#" class="hero__learn-btn button button--l button--ghost font-weight--semi-bold accent">Learn More</a>
       </div>
 
     </div>
-  </section>
+  </header>
 
-
-  <section class="offset-from-top">
+  <section class="top-products section">
     <div class="container">
-      <h2 class="sansita-64-600 centered">Top Products</h2>
-      <ul class="top-products__items offset-from-top">
+      <h2 class="section__title">Top Products</h2>
+      <ul class="top-products__items">
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item1.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item2.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item3.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item4.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item5.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
         <li>
-          <article class="item-card">
-            <div class="item-card__image">
+          <article class="product">
+            <div class="product__image">
               <img class="cover" src="/images/item6.png" alt="">
             </div>
-            <div class="item-card__price">
-              <p class="inter-24-600 white">$40</p>
-              <img class="info-image" src="./images/info.svg" alt="">
+            <div class="product__info">
+              <p class="product__price">$40</p>
+              <button class="product__info-btn button--ghost">
+                <img src="./images/info.svg" alt="">
+              </button>
             </div>
-            <div class="item-card__description">
-              <h3 class="inter-24-500 white">Whole Grain Bread</h3>
-              <button type="button" class="link-button link-button--small link-button--red inter-24-500">Add</button>
+            <div class="product__description">
+              <h3 class="product__title">Whole Grain Bread</h3>
+              <button class="button button--sm font-weight--medium">Add</button>
             </div>
           </article>
         </li>
@@ -149,74 +171,85 @@
 
   </section>
 
-  <section class="discount offset-from-top">
+  <section class="discount section">
     <div class="container discount__container">
-      <h2 class="centered sansita-48-500 red">20% Off Your </br> First Order</h2>
-      <p class="centered inter-24-400 grey">
+      <h2 class="section__title section__title--sm section__title--accent">20% Off Your <br> First Order</h2>
+      <p class="discount__text dark centered">
         Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibenjgg.
       </p>
-      <a href="#" class="discount__link link-button link-button--medium link-button--red inter-24-600 off-white">
+      <a href="#" class="discount__btn button button--l font-weight--medium light">
         Learn More
       </a>
     </div>
   </section>
 
-  <section class="explore offset-from-top">
+  <section class="explore section">
     <div class="container">
-      <h2 class="sansita-64-600 centered">Explore More</h2>
-      <nav class="explore__navigation">
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Cake</button>
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Muffins</button>
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Croissant</button>
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Bread</button>
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Tart</button>
-        <button type="button" class="explore_nav_button link-button poppins-24-600 grey">Favorite</button>
+      <h2 class="section__title">Explore More</h2>
+      <nav class="explore__nav">
+        <ul class="explore__nav-btns">
+          <li>
+            <button class="explore__nav-btn explore__nav-btn--active button button--ghost">Muffins</button>
+          </li>
+          <li>
+            <button class="explore__nav-btn button button--ghost">Croissant</button>
+          </li>
+          <li>
+            <button class="explore__nav-btn button button--ghost">Bread</button>
+          </li>
+          <li>
+            <button class="explore__nav-btn button button--ghost">Tart</button>
+          </li>
+          <li>
+            <button class="explore__nav-btn button button--ghost">Favorite</button>
+          </li>
+        </ul>
       </nav>
-      <ul class="explore__items offset-from-top">
-        <li>
-          <img class="explore-item" src="./images/photo_1.png" alt="">
+      <ul class="explore__items">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_1.png" alt="">
         </li>
-        <li>
-          <img class="explore-item" src="./images/photo_2.png" alt="">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_2.png" alt="">
         </li>
-        <li>
-          <img class="explore-item" src="./images/photo_3.png" alt="">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_3.png" alt="">
         </li>
-        <li>
-          <img class="explore-item" src="./images/photo_4.png" alt="">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_4.png" alt="">
         </li>
-        <li>
-          <img class="explore-item" src="./images/photo_5.png" alt="">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_5.png" alt="">
         </li>
-        <li>
-          <img class="explore-item" src="./images/photo_6.png" alt="">
+        <li class="explore__item">
+          <img class="explore__img" src="./images/photo_6.png" alt="">
         </li>
       </ul>
     </div>
   </section>
 
-  <section class="about-us offset-from-top">
+  <section class="about-us section">
     <div class="container about-us__container">
-      <h2 class="centered sansita-48-500 off-white">About Us</h2>
-      <p class="centered inter-24-400 light-grey">
+      <h2 class="about-us__title section__title section__title--light">About Us</h2>
+      <p class="dark--light centered">
         Suspendisse ac rhoncus nisl, eu tempor urna. Curabitur vel bibendum lorem. Morbi convallis.
       </p>
-      <a href="#" class="about-us__link link-button link-button--medium link-button--red inter-24-600 off-white">
+      <a href="#" class="about-us__btn button button--l font-weight--semi-bold">
         Read More
       </a>
     </div>
   </section>
 
-  <section class="featured offset-from-top">
+  <section class="featured section">
     <div class="container">
-      <h2 class="centered sansita-64-600">Featured Treats</h2>
-      <ul class="featured__items offset-from-top">
+      <h2 class="section__title">Featured Treats</h2>
+      <ul class="featured__items">
         <li>
           <article class="featured-item">
             <img class="featured-item__image" src="images/featured_1.png" alt="">
             <div class="featured-item__desc">
-              <h3 class="inter-32-600">Puffed Pastry</h3>
-              <p class="inter-32-600">$8</p>
+              <h3 class="featured-item__title">Puffed Pastry</h3>
+              <p class="featured-item__price">$8</p>
             </div>
           </article>
         </li>
@@ -224,8 +257,8 @@
           <article class="featured-item">
             <img class="featured-item__image" src="images/featured_2.png" alt="">
             <div class="featured-item__desc">
-              <h3 class="inter-32-600">Puffed Pastry</h3>
-              <p class="inter-32-600">$8</p>
+              <h3 class="featured-item__title">Puffed Pastry</h3>
+              <p class="featured-item__price">$8</p>
             </div>
           </article>
         </li>
@@ -233,8 +266,8 @@
           <article class="featured-item">
             <img class="featured-item__image" src="images/featured_3.png" alt="">
             <div class="featured-item__desc">
-              <h3 class="inter-32-600">Puffed Pastry</h3>
-              <p class="inter-32-600">$8</p>
+              <h3 class="featured-item__title">Puffed Pastry</h3>
+              <p class="featured-item__price">$8</p>
             </div>
           </article>
         </li>
@@ -242,77 +275,120 @@
     </div>
   </section>
 
-  <footer class="footer offset-from-top">
+  <footer class="footer section">
     <div class="container">
+
       <nav class="footer__navigation">
         <img src="images/logo.svg" alt="">
-        <div class="social">
-          <a class="link-button inter-24-600 pale-yellow-light" href="#">Follow Us</a>
-          <div class="social__icons">
-            <i class="social-icon fab fa-facebook"></i>
-            <i class="social-icon fab fa-pinterest"></i>
-            <i class="social-icon fab fa-whatsapp"></i>
-            <i class="social-icon fab fa-instagram"></i>
-          </div>
-        </div>
-
-      </nav>
-      <div class="footer__content">
-        <div class="footer-sections-left">
-          <section class="footer-section">
-            <h2 class="inter-36-700 pale-yellow-light">About Us</h2>
-            <a class="contacts-button link-button poppins-24-500 off-white" href="tel:(456) 789-12301">
-              (456) 789-12301
-            </a>
-            <a class="contacts-button link-button poppins-24-500 off-white" href="mailto:info@modrino.co.uk">
-              info@modrino.co.uk
-            </a>
-            <a class="contacts-button link-button poppins-24-500 off-white" href="#">South 13th street</a>
-            <a class="contacts-button link-button poppins-24-500 off-white" href="#">New York America</a>
-          </section>
-          <section class="footer-section">
-            <h2 class="inter-36-700 pale-yellow-light">Explore</h2>
-            <a class="link-button poppins-24-600 off-white" href="#">Home</a>
-            <a class="link-button poppins-24-600 off-white" href="#">Blog</a>
-            <a class="link-button poppins-24-600 off-white" href="#">Contact Us</a>
-            <a class="link-button poppins-24-600 off-white" href="#">Services</a>
-          </section>
-        </div>
-        <section class="footer-section">
-          <h2 class="inter-36-700 pale-yellow">Recent News</h2>
-          <ul class="news-items">
+        <div class="footer__social">
+          <p class="footer__follow-us">Follow Us</p>
+          <ul class="footer__social-icons">
             <li>
-              <article class="news-item">
-                <img class="news-item__image" src="./images/news_1.png" alt="">
-                <div class="news-item__desc">
-                  <p class="poppins-18-400 pale-yellow">
-                    June 14,2024
-                  </p>
-                  <h3 class="poppins-24-500 off-white">
-                    Puff pastry bliss.
-                  </h3>
-                </div>
-              </article>
+              <a href="https://facebook.com">
+                <i class="footer__social-icon fab fa-facebook"></i>
+              </a>
             </li>
             <li>
-              <article class="news-item">
-                <img class="news-item__image" src="./images/news_1.png" alt="">
-                <div class="news-item__desc">
-                  <p class="poppins-18-400 pale-yellow">
-                    June 14,2024
-                  </p>
-                  <h3 class="poppins-24-500 off-white">
-                    Puff pastry bliss.
-                  </h3>
-                </div>
-              </article>
+              <a href="https://pinterest.com">
+                <i class="footer__social-icon fab fa-pinterest"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://whatsapp.com">
+                <i class="footer__social-icon fab fa-whatsapp"></i>
+              </a>
+            </li>
+            <li>
+              <a href="https://instagram.com">
+                <i class="footer__social-icon fab fa-instagram"></i>
+              </a>
             </li>
           </ul>
-        </section>
+        </div>
+      </nav>
+
+      <div class="footer__content">
+
+        <div class="footer__section footer__section--left">
+          <nav class="footer__col">
+            <h2 class="footer__col-title accent--light">About Us</h2>
+            <ul class="footer__col-items">
+              <li>
+                <a class="footer__contact-btn light" href="tel:(456) 789-12301">(456) 789-12301</a>
+              </li>
+              <li>
+                <a class="footer__contact-btn light" href="mailto:info@modrino.co.uk">info@modrino.co.uk</a>
+              </li>
+              <li>
+                <a class="footer__contact-btn light" href="#">South 13th street</a>
+              </li>
+              <li>
+                <a class="footer__contact-btn light" href="#">New York America</a>
+              </li>
+            </ul>
+          </nav>
+
+          <nav class="footer__col">
+            <h2 class="footer__col-title accent--light">Explore</h2>
+            <ul class="footer__col-items">
+              <li>
+                <a class="footer__explore-btn light" href="#">Home</a>
+              </li>
+              <li>
+                <a class="footer__explore-btn light" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="footer__explore-btn light" href="#">Contact Us</a>
+              </li>
+              <li>
+                <a class="footer__explore-btn light" href="#">Services</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
+        <div class="footer__section footer__section--right">
+          <nav class="footer__col">
+            <h2 class="footer__col-title accent--light">Recent News</h2>
+            <ul class="footer__news-items">
+              <li>
+                <article class="news-item">
+                  <img class="news-item__image" src="./images/news_1.png" alt="">
+                  <div class="news-item__desc">
+                    <p class="news-item__date accent">
+                      June 14,2024
+                    </p>
+                    <h3 class="news-item__title light">
+                      Puff pastry bliss.
+                    </h3>
+                  </div>
+                </article>
+              </li>
+              <li>
+                <article class="news-item">
+                  <img class="news-item__image" src="./images/news_1.png" alt="">
+                  <div class="news-item__desc">
+                    <p class="news-item__date accent">
+                      June 14,2024
+                    </p>
+                    <h3 class="news-item__title light">
+                      Puff pastry bliss.
+                    </h3>
+                  </div>
+                </article>
+              </li>
+            </ul>
+          </nav>
+        </div>
+
       </div>
-      <div class="footer__copyright offset-from-top centered inter-24-600 dark-grey">
-        © 2024 Bake House. All rights reserved
+
+      <div>
+        <p class="footer__copyright centered dark">
+          © 2024 Bake House. All rights reserved
+        </p>
       </div>
+
     </div>
   </footer>
 
